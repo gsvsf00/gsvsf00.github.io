@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style2.css" rel="stylesheet" type="text/css" />
-    <script src="https://kit.fontawesome.com/edc12550df.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <title>Profile Card</title>
 </head>
 <body>
@@ -14,17 +14,25 @@
         </figure>
         <div class="profile_card_desc">
             <h1>Gabriel Vasconcelos</h1>
-            <div>Full Stack Developer</div>
-            <i class='fas fa-map-marker-alt'style='font-size:15px; margin-top:2px; margin-right:4px'></i></i>
-            <div>Brazil, Fortaleza</div>
-            <div>Fitbank 405</div>
+            <div class="text-1">
+                <p>Dev Trainee on <span>Fitbank 450</span></p>
+            </div>
+            <div class="location">
+                <ion-icon name="location-outline"></ion-icon>
+                <div>Brazil, Fortaleza</div>
+            </div>
         </div>
         <div class="profile_card_social">
-            <a href="#"class="Github">Github</a>
-            <a href="#"class="Instagram">Instagram</a>
-            <a href="#"class="Discord">Discord</a>
+            <a class="icon-block" href="https://github.com/gsvsf00" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a class="icon-block" href="https://www.instagram.com/gsv_00/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a class="icon-block" href="https://discord.com/invite/maERGBd" target="_blank">
+                <ion-icon name="logo-discord"></ion-icon>
+            </a>
         </div>
-        <div class="btn">butão</div>
     </div>
     
 </body>
