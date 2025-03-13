@@ -40,6 +40,8 @@
         
         // Work section
         "my_work": "Trabalhos",
+        "name_company_1": "FitBank - 3 anos",
+        "time_line_2": "Desenvolvimento de Jogos",
         "view_project": "Ver Projeto",
         
         // Contact section
