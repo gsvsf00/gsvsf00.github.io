@@ -1,0 +1,62 @@
+/* Language Switcher Styles */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.language-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 15px;
+    margin: 0 2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.language-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Default active button color (light mode) */
+.language-btn.active {
+    background-color: rgba(255, 144, 0, 0.8); /* Orange for light mode */
+    color: #fff;
+}
+
+/* Dark mode active button color */
+[data-theme="dark"] .language-btn.active {
+    background-color: rgba(52, 152, 219, 0.8); /* Blue for dark mode (#3498db) */
+    color: #fff;
+}
+
+/* Separator between language buttons */
+.language-switcher .separator {
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .language-switcher {
+        top: 10px;
+        left: 10px;
+        padding: 3px 8px;
+    }
+    
+    .language-btn {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+} 

@@ -1,39 +1,457 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <title>Profile Card</title>
-</head>
-<body>
-    <div class="profile_card">
-        <figure class="profile_card_img">
-            <img src="https://i.imgur.com/ExVoVzj.png" alt="...">
-        </figure>
-        <div class="profile_card_desc">
-            <h1>Gabriel Vasconcelos</h1>
-            <div class="text-1">
-                <p>Dev Trainee on <span>Fitbank 450</span></p>
-            </div>
-            <div class="location">
-                <ion-icon name="location-outline"></ion-icon>
-                <div>Brazil, Fortaleza</div>
-            </div>
-        </div>
-        <div class="profile_card_social">
-            <a class="icon-block" href="https://github.com/gsvsf00" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a class="icon-block" href="https://www.instagram.com/gsv_00/" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a class="icon-block" href="https://discord.com/invite/maERGBd" target="_blank">
-                <ion-icon name="logo-discord"></ion-icon>
-            </a>
-        </div>
-    </div>
-    
-</body>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio - Gabriel Vasconcelos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio website for Gabriel Vasconcelos, Software Developer">
+	<meta name="keywords" content="portfolio, developer, software, web, backend">
+	<meta name="author" content="Gabriel Vasconcelos">
+	
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Portfolio - Gabriel Vasconcelos"/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content="Gabriel Vasconcelos Portfolio"/>
+	<meta property="og:description" content="Portfolio website for Gabriel Vasconcelos, Software Developer"/>
+	<meta name="twitter:title" content="Portfolio - Gabriel Vasconcelos" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	
+	<!-- Font Awesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="assets/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Language Switcher styles -->
+	<link rel="stylesheet" href="assets/css/language-switcher.css">
+	<!-- Dark Mode styles -->
+	<link rel="stylesheet" href="assets/css/dark-mode.css">
+
+	<!-- Modernizr JS -->
+	<script src="assets/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<!-- Language Switcher -->
+	<div id="language-switcher" class="language-switcher">
+		<button class="language-btn active" data-lang="en">EN</button>
+		<button class="language-btn" data-lang="pt-br">PT</button>
+	</div>
+	
+	<!-- Dark Mode Toggle -->
+	<div class="theme-switch-wrapper">
+		<span class="sun-icon"><i class="fas fa-sun"></i></span>
+		<label class="theme-switch" for="theme-toggle">
+			<input type="checkbox" id="theme-toggle" />
+			<span class="slider"></span>
+		</label>
+		<span class="moon-icon"><i class="fas fa-moon"></i></span>
+	</div>
+	
+	<div id="page">	
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(assets/images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<div class="profile-thumb" style="background: url(assets/images/profile.jpg);"></div>
+							<h1><span>Gabriel Vasconcelos</span></h1>
+							<h3><span>Software Developer / Backend Developer</span></h3>
+							<p>
+								<ul class="fh5co-social-icons">
+									<li><a href="https://www.instagram.com/gsv_00/" target="_blank" rel="noopener noreferrer"><i class="icon-instagram2"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/gabriel-vasconcelos-ti" target="_blank" rel="noopener noreferrer"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="https://github.com/gsvsf00" target="_blank" rel="noopener noreferrer"><i class="icon-github2"></i></a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="fh5co-about" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2 data-i18n="about_me">Sobre mim</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="info">
+						<li><span class="first-block" data-i18n="name">Nome:</span><span class="second-block">Gabriel da Silva Vasconcelos</span></li>
+						<li><span class="first-block" data-i18n="phone">Telefone:</span><span class="second-block">+(55)85 99840-1693</span></li>
+						<li><span class="first-block" data-i18n="email">Email:</span><span class="second-block">bielsen.tech@gmail.com</span></li>
+						<li><span class="first-block" data-i18n="website">Website:</span><span class="second-block">bielsen.pro</span></li>
+						<li><span class="first-block" data-i18n="address">Endereço:</span><span class="second-block">Fortaleza-CE, Brasil</span></li>
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<h2 data-i18n="hello">Olá!</h2>
+					<p data-i18n="about_text_1">Graduando em Engenharia de Software na Anhanguera Educacional. Tenho 3 anos de experiência com desenvolvimento de api's e microserviços, manutenções em aplicações Web, mensageria, etc.</p>
+					<p data-i18n="about_text_2">Sempre Buscando melhorias para os sistemas em desenvolvimento. Desenvolver funcionalidades utilizando conhecimento técnico nas linguagens de programação e seu ecossistema, manter aplicações desenvolvidas, levantar requisitos de novas funcionalidades, Identificar e resolver falhas, participar de reuniões.</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="https://www.instagram.com/gsv_00/" target="_blank" rel="noopener noreferrer"><i class="icon-instagram2"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/gabriel-vasconcelos-ti/" target="_blank" rel="noopener noreferrer"><i class="icon-linkedin2"></i></a></li>
+							<li><a href="https://github.com/gsvsf00" target="_blank" rel="noopener noreferrer"><i class="icon-github2"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-resume" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2 data-i18n="my_resume">Meu resumo</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline">
+						<li class="timeline-heading text-center animate-box">
+							<div><h3 data-i18n="work_experience">Experiência de trabalho</h3></div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title" data-i18n="software_developer">Software Developer</h3>
+									<span class="company">FitBank - 3 anos</span>
+								</div>
+								<div class="timeline-body">
+									<p data-i18n="fitbank_desc">Atuei no desenvolvimento e manutenção de APIs para o sistema bancário, utilizando C# e .NET Core. Participei da implementação de novas funcionalidades e da correção de bugs, garantindo a estabilidade e a segurança do sistema. Trabalhei com integração de serviços financeiros e implementação de regras de negócio complexas.</p>
+								</div>
+							</div>
+						</li>						
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Desenvolvimento de Jogos</h3>
+									<span class="company">Wyd PKZone - 01/2021 - 03/2021</span>
+								</div>
+								<div class="timeline-body">
+									<p data-i18n="pkzone_desc">Foi projeto pessoal junto com um amigo, meu papel foi ser responsavel em manter o servidor do jogo e o site, atualizando criando funções novas, como bloquear o uso de macros, permitir que o usuário possa entrar em certas zonas e etc. </p>
+								</div>
+							</div>
+						</li>
+
+						<br>
+						<li class="timeline-heading text-center animate-box">
+							<div><h3 data-i18n="education">Educação</h3></div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Bacharelado Engenharia de Software</h3>
+									<span class="company">Anhanguera Educacional - 2024 - Atualmente</span>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title" data-i18n="bs_information_systems">Bacharelado Ciência da Computação</h3>
+									<span class="company">Universidade Federal do Ceará - 2019 - 2024 (Não concluido)</span>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-unverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Ensino Médio Completo</h3>
+									<span class="company">Colegio Universo - 2017</span>
+								</div>
+							</div>
+						</li>
+						
+			    	</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fh5co-features" class="animate-box">
+		<div class="container">
+			<div class="services-padding">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2 data-i18n="my_services">Meus serviços</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-desktop"></i>
+							</span>
+							<div class="feature-copy">
+								<h3 data-i18n="desktop_dev">Desenvolvimento de Aplicativos Desktop</h3>
+								<p data-i18n="desktop_dev_desc">Usando o CustomTkinter no Python, podendo à criar aplicativos desktop para Windows com interfaces gráficas ricas e recursos avançados.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 text-center">
+
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-genius"></i>
+							</span>
+							<div class="feature-copy">
+								<h3 data-i18n="web_dev">Desenvolvimento Web</h3>
+								<p data-i18n="web_dev_desc">Criar aplicativos web usando os framework (ASP.NET, React, Angular/AngularJS, Node.js), permitindo a criação de sites dinâmicos, portais, aplicativos web e serviços web.</p>
+							</div>
+						</div>
+
+					</div>				
+				</div>
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-cloud"></i>
+							</span>
+							<div class="feature-copy">
+								<h3 data-i18n="api_dev">Desenvolvimento de Serviços e APIs</h3>
+								<p data-i18n="api_dev_desc">Criando serviços web e APIs, permitindo a comunicação e integração de sistemas.</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-6 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-search"></i>
+							</span>
+							<div class="feature-copy">
+								<h3 data-i18n="db_dev">Desenvolvimento de aplicações de banco de dados</h3>
+								<p data-i18n="db_dev_desc">Criação de aplicativos que interagem com os dados de maneira eficiente e segura.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-skills" class="animate-box fh5co-bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2 data-i18n="my_skills">Skills</h2>
+				</div>
+			</div>
+			<div class="row row-pb-md">
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="95"><span><strong>C#</strong>95%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="95"><span><strong>ASP.NET MVC </strong>95%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="80"><span><strong>Java</strong>80%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="75"><span><strong>Python</strong>75%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="70"><span><strong>JavaScript</strong>70%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="95"><span><strong>SQL</strong>95%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>MongoDB</strong>90%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="60"><span><strong>RabbitMQ</strong>60%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="75"><span><strong>React</strong>75%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="80"><span><strong>Entity Framework</strong>80%</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-work" class="fh5co-bg-dark">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2 data-i18n="my_work">Trabalhos</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center col-padding animate-box">
+					<a href="https://github.com/gsvsf00/wyd-sandboxing" target="_blank" class="work" style="background-image: url(assets/images/wyd_bot_3.png);">
+						<div class="desc">
+							<h3>Wyd Sandboxing Application</h3>
+							<span>Application</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(assets/images/portfolio-2.jpg);">
+						<div class="desc">
+							<h3>PDV</h3>
+							<span>Ponto de Venda Desktop</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center col-padding animate-box">
+					<a href="#" class="work" style="background-image: url(assets/images/portfolio-3.jpg);">
+						<div class="desc">
+							<h3>e-commerce</h3>
+							<span>Utilizando a arquitetura de microsserviços</span>
+						</div>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-consult">
+		<div class="video fh5co-video" style="background-image: url(assets/images/send-message.png);">
+			<div class="overlay"></div>
+		</div>
+		<div class="choose animate-box">
+			<h2 data-i18n="contact">Contato</h2>
+			<form id="meuFormulario" onsubmit="abrirClienteEmail(event)">
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" id="fname" name="firstName" class="form-control" placeholder="Your firstname" data-i18n="first_name">
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" id="lname" name="lastName" class="form-control" placeholder="Your lastname" data-i18n="last_name">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="email" name="email" class="form-control" placeholder="Your email address" data-i18n="email">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="subject" name="subject" class="form-control" placeholder="Your subject of this message" data-i18n="subject">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<textarea name="message" id="message"cols="30" rows="10" class="form-control" placeholder="Say something about us" data-i18n="message"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Send Message" class="btn btn-primary" data-i18n="send_message">
+				</div>
+
+			</form>	
+		</div>
+	</div>
+
+	<div id="fh5co-started" class="fh5co-bg-dark">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2 data-i18n="get_in_touch">Contate-me!</h2>
+					<p data-i18n="get_in_touch_desc">Sou um desenvolvedor C# pronto para colaborar e ajudar em projetos desafiadores. Com habilidades em C#, java e uma vontade constante de aprender, estou aberto a oportunidades para contribuir com meu entusiasmo e dedicação no desenvolvimento de soluções inovadoras.</p>
+					<div class="download-cv text-center" style="margin: 20px auto;">
+						<a id="cv-download-btn" href="assets/docs/CV_GABRIEL_DA_SILVA_VASCONCELOS_PT-BR.pdf" class="btn btn-default btn-lg" download target="_blank">
+							<i class="fa fa-download"></i>
+							<span data-i18n="download_cv">Baixar CV</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="assets/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="assets/js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="assets/js/jquery.easypiechart.min.js"></script>
+	
+	<!-- Language Files -->
+	<script src="assets/i18n/en.js"></script>
+	<script src="assets/i18n/pt-br.js"></script>
+	<script src="assets/i18n/language-switcher.js"></script>
+	
+	<!-- Dark Mode -->
+	<script src="assets/js/dark-mode.js"></script>
+	
+	<!-- Ensure Dark Mode is initialized -->
+	<script>
+		// Check if dark mode is already initialized
+		document.addEventListener('DOMContentLoaded', function() {
+			// Force dark mode initialization
+			setTimeout(function() {
+				if (window.ThemeToggle) {
+					console.log('Forcing dark mode initialization');
+					window.ThemeToggle.init();
+				} else {
+					console.error('ThemeToggle not found, dark mode may not work');
+				}
+			}, 500); // Small delay to ensure everything is loaded
+		});
+	</script>
+	
+	<!-- Main -->
+	<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
+
+

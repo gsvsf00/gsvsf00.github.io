@@ -1,0 +1,337 @@
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --heading-color: #2c3e50;
+  --link-color: #FF9000;
+  --border-color: #e6e6e6;
+  --card-bg: #f8f9fa;
+  --timeline-bg: #f9f9f9;
+  --timeline-accent: #FF9000;
+  --dark-section-bg: rgba(95, 95, 95, 0.9);
+  --chart-border-color: #FF9000;
+  --chart-text-color: #fff;
+}
+
+[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --text-color: #f5f5f5;
+  --heading-color: #e6e6e6;
+  --link-color: #61dafb;
+  --border-color: #444;
+  --card-bg: #2d2d2d;
+  --timeline-bg: #2a2a2a;
+  --timeline-accent: #3498db;
+  --dark-section-bg: #111;
+  --chart-border-color: #3498db;
+  --chart-text-color: #fff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+input, textarea, select {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.fh5co-bg-color {
+  background-color: var(--timeline-bg);
+}
+
+/* Apply theme colors to dark sections */
+.fh5co-bg-dark {
+  background-color: var(--dark-section-bg) !important;
+}
+
+#fh5co-features {
+  background-color: var(--dark-section-bg) !important;
+}
+
+/* Fix chart colors */
+.chart canvas {
+  border-color: var(--chart-border-color) !important;
+}
+
+.chart span {
+  color: var(--chart-text-color) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+  z-index: 10 !important;
+  line-height: 1.2 !important;
+  font-size: 14px !important;
+}
+
+.chart span strong {
+  display: block !important;
+  font-size: 24px !important;
+  margin-bottom: 5px !important;
+}
+
+/* Dark Mode Toggle Styles */
+.theme-switch-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 50px;
+  margin: 0 8px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #f1c40f;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  background-color: white;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 16px;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #3498db;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Sun and Moon Icons */
+.sun-icon, .moon-icon {
+  color: white;
+  font-size: 16px;
+}
+
+.sun-icon {
+  color: #f1c40f;
+}
+
+.moon-icon {
+  color: #3498db;
+}
+
+/* Timeline styles for both light and dark mode */
+.timeline .timeline-heading > div h3 {
+  background-color: var(--timeline-accent);
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  letter-spacing: 3px;
+}
+
+.timeline-panel {
+  background-color: var(--card-bg);
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid var(--timeline-accent);
+  transition: all 0.3s ease;
+}
+
+.timeline-panel:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.timeline:before {
+  background-color: var(--border-color);
+}
+
+.timeline-badge {
+  background-color: var(--timeline-accent) !important;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-title {
+  color: var(--timeline-accent) !important;
+  font-weight: bold;
+}
+
+.company {
+  font-style: italic;
+}
+
+/* Dark mode specific overrides */
+[data-theme="dark"] .fh5co-bg-dark {
+  background-color: #111;
+}
+
+[data-theme="dark"] .btn-primary {
+  background-color: #2980b9;
+}
+
+[data-theme="dark"] .btn-default {
+  background-color: #2980b9 !important;
+  color: #ffffff !important;
+  border-color: #2980b9 !important;
+  text-shadow: none !important;
+}
+
+[data-theme="dark"] .btn-default:hover,
+[data-theme="dark"] .btn-default:focus,
+[data-theme="dark"] .btn-default:active {
+  background-color: #3498db !important;
+  color: #ffffff !important;
+  border-color: #3498db !important;
+}
+
+[data-theme="dark"] .btn-default i,
+[data-theme="dark"] .btn-default span {
+  color: #ffffff !important;
+}
+
+/* Ensure text is visible in dark mode */
+[data-theme="dark"] .download-cv a span {
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+
+[data-theme="dark"] .fh5co-heading h2 {
+  color: var(--heading-color) !important;
+}
+
+/* Additional dark mode overrides for better text visibility */
+[data-theme="dark"] #fh5co-about,
+[data-theme="dark"] #fh5co-resume,
+[data-theme="dark"] #fh5co-features,
+[data-theme="dark"] #fh5co-skills,
+[data-theme="dark"] #fh5co-started,
+[data-theme="dark"] #fh5co-work,
+[data-theme="dark"] #fh5co-consult {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Dark mode specific timeline styles */
+[data-theme="dark"] .timeline-body p {
+  color: #f5f5f5 !important;
+  line-height: 1.6;
+}
+
+[data-theme="dark"] .company {
+  color: #bbb !important;
+}
+
+/* Info blocks styling */
+[data-theme="dark"] .info .first-block,
+[data-theme="dark"] .info .second-block,
+[data-theme="dark"] .timeline-heading h3 {
+  color: var(--text-color);
+}
+
+/* Specific rules for About Me section */
+[data-theme="dark"] #fh5co-about h2,
+[data-theme="dark"] #fh5co-about p,
+[data-theme="dark"] #fh5co-about .info li span {
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] #fh5co-about .fh5co-heading h2 {
+  color: var(--heading-color) !important;
+}
+
+[data-theme="dark"] .fh5co-social-icons a {
+  color: var(--link-color);
+}
+
+[data-theme="dark"] .feature-copy h3 {
+  color: var(--heading-color);
+}
+
+[data-theme="dark"] .feature-copy p {
+  color: var(--text-color);
+}
+
+/* Override any inline styles that might be causing issues */
+[data-theme="dark"] p,
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] span,
+[data-theme="dark"] li {
+  color: var(--text-color) !important;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .theme-switch-wrapper {
+    top: 10px;
+    right: 10px;
+    padding: 3px 8px;
+  }
+  
+  .theme-switch {
+    margin: 0 5px;
+  }
+  
+  .sun-icon, .moon-icon {
+    font-size: 14px;
+  }
+}
+
+/* Styling for download CV button in both modes */
+.download-cv a {
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  margin: 10px 0 !important;
+  text-align: center !important;
+  min-width: 180px !important;
+}
+
+.download-cv a i {
+  margin-right: 8px !important;
+  display: inline-block !important;
+}
+
+.download-cv a span {
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* Make sure the download icon is visible in both modes */
+.fa-download {
+  display: inline-block !important;
+  margin-right: 8px !important;
+} 
