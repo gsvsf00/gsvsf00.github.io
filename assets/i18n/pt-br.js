@@ -31,7 +31,7 @@
         "bs_information_systems": "Bacharelado Ciência da Computação",
         
         // Experience descriptions
-        "fitbank_desc": "Atuei no desenvolvimento e manutenção de APIs para o sistema bancário, utilizando C# e .NET Core. Participei da implementação de novas funcionalidades e da correção de bugs, garantindo a estabilidade e a segurança do sistema. Trabalhei com integração de serviços financeiros e implementação de regras de negócio complexas.",
+        "fitbank_desc": "Trabalhei no desenvolvimento e na manutenção de APIs para o sistema bancário, usando C# e .NET Core. Participei da implementação de novos recursos e correções de bugs, garantindo a estabilidade e a segurança do sistema. Estive envolvido na integração de serviços financeiros e na implementação de regras comerciais complexas. Além disso, participei desde o início do Projeto Internacional no Fitbank, contribuindo para o desenvolvimento de soluções de pagamento internacionais e garantindo a integração perfeita com sistemas financeiros internacionais.",
         "pkzone_desc": "Foi projeto pessoal junto com um amigo, meu papel foi ser responsavel em manter o servidor do jogo e o site, atualizando criando funções novas, como bloquear o uso de macros, permitir que o usuário possa entrar em certas zonas e etc.",
         
         // Skills section
