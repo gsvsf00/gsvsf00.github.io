@@ -28,11 +28,12 @@
         "software_developer": "Software Developer",
         "backend_developer_jr": "Desenvolvedor Backend Junior",
         "education": "Educação",
+        "bs_software_engineering": "Bacharelado Engenharia de Software",
         "bs_information_systems": "Bacharelado Ciência da Computação",
         
         // Experience descriptions
         "fitbank_desc": "Trabalhei no desenvolvimento e na manutenção de APIs para o sistema bancário, usando C# e .NET Core. Participei da implementação de novos recursos e correções de bugs, garantindo a estabilidade e a segurança do sistema. Estive envolvido na integração de serviços financeiros e na implementação de regras comerciais complexas. Além disso, participei desde o início do Projeto Internacional no Fitbank, contribuindo para o desenvolvimento de soluções de pagamento internacionais e garantindo a integração perfeita com sistemas financeiros internacionais.",
-        "pkzone_desc": "Foi projeto pessoal junto com um amigo, meu papel foi ser responsavel em manter o servidor do jogo e o site, atualizando criando funções novas, como bloquear o uso de macros, permitir que o usuário possa entrar em certas zonas e etc.",
+        "pkzone_desc": "Foi um projeto pessoal desenvolvido em conjunto com um amigo, no qual fui responsável por manter e gerenciar o servidor do jogo e o site. Minhas principais atribuições incluíam a atualização do servidor, a implementação de novas funcionalidades e a resolução de problemas. Entre as funcionalidades que implementei, destaco a criação de sistemas para bloquear o uso de macros, permitir o acesso de usuários a zonas específicas do jogo e a organização de eventos especiais. Para hospedar o servidor, utilizei a AWS EC2, onde gerenciei toda a infraestrutura. O servidor do jogo era baseado em uma source em C++, e parte do meu trabalho envolvia corrigir bugs diretamente no código-fonte. Além disso, toda a implementação de novas funcionalidades, como a criação de eventos personalizados, exigia modificações na source do servidor. O banco de dados e o site foram hospedados no mesmo servidor. O site foi desenvolvido em Node.js, e também fui responsável por sua manutenção e integração com o servidor do jogo. Essa experiência me permitiu adquirir conhecimentos avançados em administração de servidores, programação em C++, Node.js e gerenciamento de bancos de dados.",
         
         // Skills section
         "my_skills": "Skills",

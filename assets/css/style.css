@@ -1012,7 +1012,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: rgba(0, 0, 0, 0.3);
 }
 .contact-info li a {
-  color: #000;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .form-control {
@@ -1298,3 +1298,45 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Styles for the contact method buttons */
+.contact-method-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-method-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact-method-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-method-buttons button i {
+  font-size: 18px;
+}
+
+#whatsapp-btn {
+  background-color: #25D366;
+  border-color: #25D366;
+}
+
+#whatsapp-btn:hover {
+  background-color: #128C7E;
+  border-color: #128C7E;
+}
+
+#email-btn:hover {
+  opacity: 0.9;
+}

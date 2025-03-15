@@ -28,12 +28,13 @@
         "software_developer": "Software Developer",
         "backend_developer_jr": "Junior Backend Developer",
         "education": "Education",
+        "bs_software_engineering": "Bachelor of Software Engineering",
         "bs_information_systems": "Bachelor of Computer Science",
         
         // Experience descriptions
-        "fitbank_desc": "I worked on the development and maintenance of APIs for the banking system, using C# and .NET Core. I participated in the implementation of new features and bug fixes, ensuring system stability and security. I worked with financial services integration and implementation of complex business rules.",
-        "pkzone_desc": "It was a personal project with a friend. My role was to be responsible for maintaining the game server and the website, updating it and creating new functions, such as blocking the use of macros, allowing users to enter certain zones and so on.",
-        "data_lawyer_desc": "Allocated to the Crawler team, where I developed efficient and scalable robots to collect data from Justice Court systems of all Brazilian states, contributing to the availability of legal information throughout the country. I kept the crawlers operational and reliable, monitoring and solving operational problems and applying bug fixes when necessary.",
+        "fitbank_desc": "I worked on the development and maintenance of APIs for the banking system, using C# and .NET Core. I participated in the implementation of new features and bug fixes, ensuring the stability and security of the system. I was involved in the integration of financial services and the implementation of complex business rules. Additionally, I participated from the beginning of the International Project at Fitbank, contributing to the development of international payment solutions and ensuring seamless integration with international financial systems.",
+        "pkzone_desc": "It was a personal project developed in collaboration with a friend, where I was responsible for maintaining and managing the game server and the website. My main tasks included updating the server, implementing new features, and troubleshooting issues. Among the features I implemented, I highlight creating systems to block the use of macros, allow users to access specific in-game zones, and organize special events. To host the server, I used AWS EC2, where I managed the entire infrastructure. The game server was based on a C++ source, and part of my work involved fixing bugs directly in the source code. Additionally, implementing new features, such as creating custom events, required modifications to the server's source code. The database and website were hosted on the same server. The website was developed in Node.js, and I was also responsible for its maintenance and integration with the game server. This experience allowed me to gain advanced knowledge in server administration, C++ programming, Node.js, and database management.",
+        
         
         // Skills section
         "my_skills": "Skills",
