@@ -1,0 +1,158 @@
+/* Sticky Navigation Bar Styles */
+.sticky-nav {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle {
+    display: block;
+    background-color: var(--link-color, #FF9000);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-left: auto;
+}
+
+.nav-toggle:hover {
+    transform: scale(1.05);
+}
+
+.nav-toggle.scrolled {
+    transform: scale(0.9);
+    opacity: 0.9;
+}
+
+.nav-toggle.scrolled:hover {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-nav.active .nav-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-menu li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    background-color: var(--link-color, #FF9000);
+    color: #fff;
+}
+
+.nav-menu li a.active {
+    background-color: var(--link-color, #FF9000);
+    color: white;
+    font-weight: bold;
+}
+
+/* CV Download Button Styling */
+.nav-menu li.nav-highlight a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+}
+
+.nav-menu li.nav-highlight a:hover {
+    background-color: var(--link-color, #FF9000);
+    color: white;
+}
+
+.nav-menu li.nav-highlight a i {
+    font-size: 14px;
+    color: var(--link-color, #FF9000);
+}
+
+.nav-menu li.nav-highlight a:hover i {
+    color: white;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] .nav-toggle {
+    background-color: var(--link-color, #61dafb);
+}
+
+[data-theme="dark"] .nav-menu li a:hover {
+    background-color: var(--link-color, #61dafb);
+}
+
+[data-theme="dark"] .nav-menu li a.active {
+    background-color: var(--link-color, #61dafb);
+}
+
+/* Dark mode CV button */
+[data-theme="dark"] .nav-menu li.nav-highlight a {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .nav-menu li.nav-highlight a i {
+    color: var(--link-color, #61dafb);
+}
+
+[data-theme="dark"] .nav-menu li.nav-highlight a:hover {
+    background-color: var(--link-color, #61dafb);
+}
+
+[data-theme="dark"] .nav-menu li.nav-highlight a:hover i {
+    color: white;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .sticky-nav {
+        top: auto;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .nav-menu {
+        top: auto;
+        bottom: 60px;
+    }
+} 

@@ -39,6 +39,8 @@
 	<link rel="stylesheet" href="assets/css/language-switcher.css">
 	<!-- Dark Mode styles -->
 	<link rel="stylesheet" href="assets/css/dark-mode.css">
+	<!-- Sticky Nav styles -->
+	<link rel="stylesheet" href="assets/css/sticky-nav.css">
 
 	<!-- Modernizr JS -->
 	<script src="assets/js/modernizr-2.6.2.min.js"></script>
@@ -67,6 +69,23 @@
 		</label>
 		<span class="moon-icon"><i class="fas fa-moon"></i></span>
 	</div>
+	
+	<!-- Sticky Navigation Bar -->
+	<nav id="sticky-nav" class="sticky-nav">
+		<div class="nav-toggle">
+			<i class="fas fa-bars"></i>
+		</div>
+		<ul class="nav-menu">
+			<li><a href="#fh5co-header" data-i18n="home">Home</a></li>
+			<li><a href="#fh5co-about" data-i18n="about_me">About</a></li>
+			<li><a href="#fh5co-resume" data-i18n="my_resume">Resume</a></li>
+			<li><a href="#fh5co-features" data-i18n="my_services">Services</a></li>
+			<li><a href="#fh5co-skills" data-i18n="my_skills">Skills</a></li>
+			<li><a href="#fh5co-work" data-i18n="my_work">Work</a></li>
+			<li><a href="#fh5co-consult" data-i18n="contact">Contact</a></li>
+			<li class="nav-highlight"><a href="#fh5co-started" data-i18n="download_cv"><i class="fas fa-download"></i> Download CV</a></li>
+		</ul>
+	</nav>
 	
 	<div id="page">	
 	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(assets/images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
@@ -397,7 +416,7 @@
 					<p data-i18n="get_in_touch_desc">Sou um desenvolvedor C# pronto para colaborar e ajudar em projetos desafiadores. Com habilidades em C#, java e uma vontade constante de aprender, estou aberto a oportunidades para contribuir com meu entusiasmo e dedicação no desenvolvimento de soluções inovadoras.</p>
 					<div class="download-cv text-center" style="margin: 20px auto;">
 						<a id="cv-download-btn" href="assets/docs/CV_GABRIEL_DA_SILVA_VASCONCELOS_PT-BR.pdf" class="btn btn-default btn-lg" download target="_blank">
-							<i class="fa fa-download"></i>
+							<i class="fas fa-download"></i>
 							<span data-i18n="download_cv">Baixar CV</span>
 						</a>
 					</div>
@@ -449,6 +468,9 @@
 	
 	<!-- Main -->
 	<script src="assets/js/main.js"></script>
+	
+	<!-- Sticky Navigation -->
+	<script src="assets/js/sticky-nav.js"></script>
 
 	</body>
 </html>
