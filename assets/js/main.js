@@ -161,26 +161,6 @@
 
 }());
 
-function abrirClienteEmail(event) {
-	debugger;
-    event.preventDefault(); // Impede o comportamento padrão do formulário (recarregar a página)
-
-    var firtsNome = document.getElementsByName('firstName')[0].value;
-    var lastNome = document.getElementsByName('lastName')[0].value;
-	
-	var nome = firtsNome + ' ' +  lastNome;
-    var email = 'vittordemelo@gmail.com';
-    var assunto = document.getElementsByName('subject')[0].value;
-    var mensagem = document.getElementsByName('message')[0].value;
-
-    
-    var corpo = "Olá,Vittor\n" + mensagem + "%0D%0A%0D%0AAtenciosamente,%0D%0A" + nome;
-
-    var link = "mailto:" + email + "?subject=" + encodeURIComponent(assunto) + "&body=" + encodeURIComponent(corpo);
-
-    window.location.href = link;
-}
-
 // New functions for WhatsApp and Email contact
 function sendViaWhatsApp() {
     // Get form data
